@@ -13,7 +13,8 @@ This repository contains codes and pre-trained checkpoints of a place recognitio
 
 # Download pre-trained checkpoint
 Pre-trained checkpoint should be placed in the root directory.
-You can download pre-trained checkpoint from this [link](https://drive.google.com/file/d/17hNeJG5SV4NkLMO_GQRkx_fcE7MT1nxO/view?usp=sharing)
+
+You can download the pre-trained checkpoint from this [link](https://drive.google.com/file/d/17hNeJG5SV4NkLMO_GQRkx_fcE7MT1nxO/view?usp=sharing)
 
 
 # How to use
