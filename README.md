@@ -16,7 +16,7 @@ Input: video file (e.g. *.avi, *.mkv)
 
 Output: jsonl file (predicted class of video frames, 1 fps)
 
-    python demo.py video-file output-file-name
+    python demo.py <video-file> <output-file-name>
     
 For example 
 
