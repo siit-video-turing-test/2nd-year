@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import resnet
 import jsonlines
 
-# usage: python demo.py [input video file] [output jsonl file]
+# usage: python demo.py <input video file> <output jsonl file name>
 # output: *.jsonl
 
 model = resnet.resnet50(num_classes=365, num_new_classes=26)
