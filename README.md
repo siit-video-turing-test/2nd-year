@@ -11,6 +11,9 @@ This repository contains codes and pre-trained checkpoints of a place recognitio
 - matplotlib
 - jsonl
 
+# Download pre-trained checkpoint
+You can download pre-trained checkpoint from this [link](http://gofile.me/6pBtc/iaXID4CKi)
+
 # How to use
 Input: video file (e.g. *.avi, *.mkv) 
 
