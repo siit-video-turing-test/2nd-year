@@ -12,8 +12,8 @@ import matplotlib.pyplot as plt
 import resnet
 import jsonlines
 
-# usage: python demo.py input.mp4
-# output: demo.avi
+# usage: python demo.py [input video file] [output jsonl file]
+# output: *.jsonl
 
 model = resnet.resnet50(num_classes=365, num_new_classes=26)
 checkpoint = torch.load('lwf_best.pth.tar')
