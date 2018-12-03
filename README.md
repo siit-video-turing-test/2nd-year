@@ -20,7 +20,21 @@ You can download the pre-trained checkpoint from this [link](https://drive.googl
 # How to use
 Input: video file (e.g. *.avi, *.mkv) 
 
-Output: jsonl file (predicted class of video frames, 1 fps)
+Output: jsonl file (predicted class of video frames for every second, 1 fps)
+
+Below is an example of output jsonl flle. 
+
+    {"second": 0.0, "type": "location", "class": "none"}
+    {"second": 0.0, "type": "location", "class": "none"}
+    ...
+    {"second": 52.0, "type": "location", "class": "cafe"}
+    {"second": 53.0, "type": "location", "class": "cafe"}
+    ...
+    {"second": 314.0, "type": "location", "class": "home-livingroom-Monica"}
+    {"second": 315.0, "type": "location", "class": "home-livingroom-Monica"}
+    ...
+
+You can run following command on a terminal,
 
     python demo.py <video-file> <output-file-name>
     
