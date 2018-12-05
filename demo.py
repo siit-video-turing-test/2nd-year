@@ -36,7 +36,7 @@ transform = transforms.Compose([
 ])
 
 cap = cv2.VideoCapture(sys.argv[1])
-fps = 1
+fps = 2
 
 n = 0
 frame_counter = 1e10
@@ -65,10 +65,10 @@ with torch.no_grad():
 			top5_value_friends, top5_index_friends = y_friends.topk(5)
 			top5_value_friends, top5_label_friends = top5_value_friends.tolist(), [class_friends[i] for i in top5_index_friends]
 
-			out_dict.append({"type": "location", "class": top5_label_friends[0], "second": float(num_frames) * 1.0 / float(fps)})		
+			if num_frames!=0: out_dict.append({"type": "location", "class": top5_label_friends[0], "seconds": float(num_frames) * 1.0 / float(fps)})		
 			
 
-                	frame_counter = 0
+			frame_counter = 0
                         num_frames += 1
 		n += 1
 		if n%100 == 0:
